@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enmos_Sensor_DataCollection", "Enmos_Sensor_DataCollection\Enmos_Sensor_DataCollection.csproj", "{19A542E0-FEFE-4483-977E-258FF6FF32E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HadoopUtil", "HadoopUtil\HadoopUtil.csproj", "{3323D857-F395-408B-98CC-9FEAE0FE000D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enmos_Receipe_DataCollection", "Enmos_Receipe_DataCollection\Enmos_Receipe_DataCollection.csproj", "{3603F1DD-7234-4915-AA56-1BAC38C50F61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19A542E0-FEFE-4483-977E-258FF6FF32E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A542E0-FEFE-4483-977E-258FF6FF32E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A542E0-FEFE-4483-977E-258FF6FF32E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A542E0-FEFE-4483-977E-258FF6FF32E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3323D857-F395-408B-98CC-9FEAE0FE000D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3323D857-F395-408B-98CC-9FEAE0FE000D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3323D857-F395-408B-98CC-9FEAE0FE000D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3323D857-F395-408B-98CC-9FEAE0FE000D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3603F1DD-7234-4915-AA56-1BAC38C50F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3603F1DD-7234-4915-AA56-1BAC38C50F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3603F1DD-7234-4915-AA56-1BAC38C50F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3603F1DD-7234-4915-AA56-1BAC38C50F61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
