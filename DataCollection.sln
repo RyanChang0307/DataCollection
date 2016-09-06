@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HadoopUtil", "HadoopUtil\Ha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enmos_Receipe_DataCollection", "Enmos_Receipe_DataCollection\Enmos_Receipe_DataCollection.csproj", "{3603F1DD-7234-4915-AA56-1BAC38C50F61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enmos_BatchIDMapping_DataCollection", "Enmos_BatchIDMapping_DataCollection\Enmos_BatchIDMapping_DataCollection.csproj", "{3D553A3D-6263-42E3-A943-FF2C7FBB0149}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3603F1DD-7234-4915-AA56-1BAC38C50F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3603F1DD-7234-4915-AA56-1BAC38C50F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3603F1DD-7234-4915-AA56-1BAC38C50F61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D553A3D-6263-42E3-A943-FF2C7FBB0149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D553A3D-6263-42E3-A943-FF2C7FBB0149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D553A3D-6263-42E3-A943-FF2C7FBB0149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D553A3D-6263-42E3-A943-FF2C7FBB0149}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
