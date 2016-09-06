@@ -55,7 +55,7 @@ namespace Enmos_Sensor_DataCollection
 
         static void PutDataToHDFS(string srcPath, string srcFileName, string trgtFilePath, string date)
         {
-            HdfsUtil data = new HdfsUtil(new Uri("http://master02:50070"), "root");
+            HdfsUtil data = new HdfsUtil(new Uri("http://master01:50070"), "root");
             string path = string.Format("{0}/month={1}", trgtFilePath, date.Substring(0, 6));
             if (!data.IsDirectoryExist(trgtFilePath, string.Format("month={0}", date.Substring(0, 6))))
                 data.CreateDirectory(path);

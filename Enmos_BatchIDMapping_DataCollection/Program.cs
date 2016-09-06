@@ -17,9 +17,8 @@ namespace Enmos_BatchIDMapping_DataCollection
         static string site02ConStr = ConfigurationManager.ConnectionStrings["ENMOS02"].ConnectionString;
         static void Main(string[] args)
         {
-            List<BatchIDMapping> data = getDataFromDB("001");
-            var list = data.Union(getDataFromDB("002"));
-            ConvertDataToCsv(list.ToList());
+            List<BatchIDMapping> data = getDataFromDB("001").Union(getDataFromDB("002")).ToList();
+            ConvertDataToCsv(data);
         }
 
         #region Sql Command
@@ -53,7 +52,7 @@ namespace Enmos_BatchIDMapping_DataCollection
 
         static void PutDataToHDFS(string srcPath, string srcFileName, string trgtFilePath)
         {
-            HdfsUtil data = new HdfsUtil(new Uri("http://master02:50070"), "root");
+            HdfsUtil data = new HdfsUtil(new Uri("http://master01:50070"), "root");
             if (data.IsFileExist(trgtFilePath, srcFileName))
                 data.DeleteFile(string.Format("{0}/{1}", trgtFilePath, srcFileName));
             data.PutDataToHdfs(string.Format("{0}\\{1}", srcPath, srcFileName), string.Format("{0}/{1}", trgtFilePath, srcFileName));
