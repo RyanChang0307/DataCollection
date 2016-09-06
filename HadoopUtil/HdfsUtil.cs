@@ -14,6 +14,14 @@ namespace HadoopUtil
             _con = new WebHDFSClient(uri, usrName);
         }
 
+        public HdfsUtil()
+        {
+            _con = new WebHDFSClient(new Uri("http://master01:50070"), "root");
+            if(_con==null)
+                _con = new WebHDFSClient(new Uri("http://master02:50070"), "root");
+
+        }
+
         /// <summary>
         /// Check file exist or not
         /// </summary>
