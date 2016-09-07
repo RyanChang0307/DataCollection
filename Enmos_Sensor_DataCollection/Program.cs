@@ -119,7 +119,7 @@ namespace Enmos_Sensor_DataCollection
             var cn = new SqlConnection(connStr);
             cn.Open();
             string sqlcmd = getSQLCmd(site, sensorType, date);
-            return cn.Query<Enmos_Sensor_Value>(sqlcmd).ToList();
+            return cn.Query<Enmos_Sensor_Value>(sqlcmd,commandTimeout:0).ToList();
         }
 
 
